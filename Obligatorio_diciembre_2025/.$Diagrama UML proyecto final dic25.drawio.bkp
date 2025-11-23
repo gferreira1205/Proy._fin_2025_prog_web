@@ -1,0 +1,79 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Safari/537.36" version="28.2.9">
+  <diagram name="Página-1" id="0PmVLqwj_GXW7S4sWXo7">
+    <mxGraphModel dx="1146" dy="750" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="TZz6M65NOtGAHlCRETjg-1" value="Usuario" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="120" y="270" width="170" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-2" value="- nombreUsuario : texto&lt;div&gt;- nombreCompleto : texto&lt;/div&gt;&lt;div&gt;- fechaNacimiento : fecha&lt;/div&gt;&lt;div&gt;- telefono : texto&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;spacing=2;spacingTop=2;" parent="TZz6M65NOtGAHlCRETjg-1" vertex="1">
+          <mxGeometry y="20" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-3" value="+ ToString() : texto" style="text;html=1;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;strokeColor=light-dark(#000000,#CBB9DD);" parent="TZz6M65NOtGAHlCRETjg-1" vertex="1">
+          <mxGeometry y="90" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-18" value="TipoMensaje" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#76608a;fontColor=#ffffff;strokeColor=#432D57;" parent="1" vertex="1">
+          <mxGeometry x="120" y="400" width="170" height="85" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-19" value="- codigoTipoMensaje : texto&lt;div&gt;- nombreTipoMensaje : texto&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;spacingTop=2;horizontal=1;" parent="TZz6M65NOtGAHlCRETjg-18" vertex="1">
+          <mxGeometry y="20" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-20" value="+ ToString() : texto" style="text;html=1;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;strokeColor=light-dark(#000000,#CBB9DD);" parent="TZz6M65NOtGAHlCRETjg-18" vertex="1">
+          <mxGeometry y="60" width="170" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-21" value="Gestor" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#647687;fontColor=#ffffff;strokeColor=#314354;" parent="1" vertex="1">
+          <mxGeometry x="720" y="270" width="400" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-22" value="- usuarios :&amp;nbsp; colección&amp;lt;Usuario&amp;gt;&lt;div&gt;- tiposMensajes : colección&amp;lt;TipoMensaje&amp;gt;&lt;/div&gt;&lt;div&gt;- mensajes : colección&amp;lt;Mensaje&amp;gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;spacing=2;spacingTop=2;" parent="TZz6M65NOtGAHlCRETjg-21" vertex="1">
+          <mxGeometry y="20" width="400" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-23" value="+ AltaUsuario(u: Usuario) : vacío&lt;div&gt;+ AltaTipoMensaje(t : TipoMensaje) : vacío&lt;/div&gt;&lt;div&gt;+ AltaMensajePrivado(m : MensajePrivado) : vacío&lt;/div&gt;&lt;div&gt;+ AltaMensajeComun(m : MensajeComun) : vacío&lt;/div&gt;&lt;div&gt;+ BuscarUsuario(nombreUsuario : texto) : Usuario&lt;/div&gt;&lt;div&gt;+ BuscarTipo(codigo: texto) : TipoMensaje&lt;/div&gt;&lt;div&gt;+ ListarMensajesPorEmisor(u : Usuario) : colección&amp;lt;Mensaje&amp;gt;&lt;/div&gt;&lt;div&gt;+ ListarMensajesCPorTipo(t: TipoMensaje) : colección&amp;lt;MensajeComun&amp;gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;strokeColor=light-dark(#000000,#A9B8C7);" parent="TZz6M65NOtGAHlCRETjg-21" vertex="1">
+          <mxGeometry y="90" width="400" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-24" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="330" y="270" width="350" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-12" value="MensajePrivado" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" parent="TZz6M65NOtGAHlCRETjg-24" vertex="1">
+          <mxGeometry width="160" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-13" value="- fechaCaducidad : fecha" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;spacingTop=2;horizontal=1;" parent="TZz6M65NOtGAHlCRETjg-12" vertex="1">
+          <mxGeometry y="20" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-14" value="+ ToString() : texto" style="text;html=1;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;strokeColor=light-dark(#000000,#FCB99E);" parent="TZz6M65NOtGAHlCRETjg-12" vertex="1">
+          <mxGeometry y="50" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-15" value="MensajeComun" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#a0522d;fontColor=#ffffff;strokeColor=#6D1F00;" parent="TZz6M65NOtGAHlCRETjg-24" vertex="1">
+          <mxGeometry x="190" width="160" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-16" value="- tipo : TipoMensaje" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;spacingTop=2;horizontal=1;" parent="TZz6M65NOtGAHlCRETjg-15" vertex="1">
+          <mxGeometry y="20" width="160" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-17" value="+ ToString() : texto" style="text;html=1;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;strokeColor=light-dark(#000000,#FCB99E);" parent="TZz6M65NOtGAHlCRETjg-15" vertex="1">
+          <mxGeometry y="50" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-35" value="" style="group" parent="1" vertex="1" connectable="0">
+          <mxGeometry x="420" y="60" width="160" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-9" value="&lt;i&gt;Mensaje&lt;/i&gt;" style="swimlane;fontStyle=1;align=center;verticalAlign=middle;childLayout=stackLayout;horizontal=1;startSize=20;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=0;marginBottom=0;html=1;whiteSpace=wrap;fillColor=#1ba1e2;fontColor=#ffffff;strokeColor=#006EAF;" parent="TZz6M65NOtGAHlCRETjg-35" vertex="1">
+          <mxGeometry width="160" height="145" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-10" value="- idMensaje : entero&lt;div&gt;- fechaHora : fecha&lt;/div&gt;&lt;div&gt;- asuntoMensaje : texto&lt;/div&gt;&lt;div&gt;- cuerpoMensaje : texto&lt;/div&gt;&lt;div&gt;- emisor : Usuario&lt;/div&gt;&lt;div&gt;- receptor : Usuario&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;spacingTop=2;horizontal=1;" parent="TZz6M65NOtGAHlCRETjg-9" vertex="1">
+          <mxGeometry y="20" width="160" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-11" value="+ ToString() : texto" style="text;html=1;align=center;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;strokeColor=light-dark(#000000,#51AFE7);" parent="TZz6M65NOtGAHlCRETjg-9" vertex="1">
+          <mxGeometry y="120" width="160" height="25" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-30" value="" style="triangle;html=1;direction=north;" parent="TZz6M65NOtGAHlCRETjg-35" vertex="1">
+          <mxGeometry x="70" y="145" width="30" height="15" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="TZz6M65NOtGAHlCRETjg-35" source="TZz6M65NOtGAHlCRETjg-12" target="TZz6M65NOtGAHlCRETjg-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="TZz6M65NOtGAHlCRETjg-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=none;endFill=0;" parent="TZz6M65NOtGAHlCRETjg-35" source="TZz6M65NOtGAHlCRETjg-15" target="TZz6M65NOtGAHlCRETjg-30" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
